@@ -1,32 +1,36 @@
 
 .top{
-background-color: #008b8b	;
-height: 170px;
-width: 100%;
-}
-.main{
-background-color: #A9A9A9;
-height: 910px;
-align-items: center;
+    background-color: #008b8b	;
+    height: 170px;
+    width: 100%;
+    }
 
-}
+.main{
+    background-color: #A9A9A9;
+    height: 910px;
+    align-items: center; 
+    text-align: center;   
+    }
+
 .bar{
-    text-align: center;
-    padding-top: 160px;
     font-family: Inter;
     font-size: 38px;
     font-weight: 900;
-    margin: 0;
-    
-}
+    margin-top: 126px;
+    text-align: center;
+    vertical-align: bottom
+    }
+
 .example{
     color: red;
     text-align: center;
-}
+    }
+    
 .printed{
     text-align: center;
     margin: 0;
 }
+
 .name{  
     font-size: 52px; 
     margin: 0;
@@ -34,10 +38,23 @@ align-items: center;
     padding-left: 5px;
     font-family: comic sans ms;
 }
+
 .taimer{
     text-align: right;
-}
+    }
+
 .body{
     margin: 0;
     padding: 0;
-}
+    }
+
+.lang{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    top: 0%;
+    height: 170px;
+    width: 100%;
+    }
