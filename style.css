@@ -5,13 +5,6 @@
     width: 100%;
     }
 
-.main{
-    background-color: #A9A9A9;
-    height: 910px;
-    align-items: center; 
-    text-align: center;   
-    }
-
 .bar{
     font-family: Inter;
     font-size: 38px;
@@ -23,14 +16,8 @@
 
 .example{
     color: red;
-    text-align: center;
     }
     
-.printed{
-    text-align: center;
-    margin: 0;
-}
-
 .name{  
     font-size: 52px; 
     margin: 0;
@@ -58,3 +45,13 @@
     height: 170px;
     width: 100%;
     }
+.main{
+    background-color: #A9A9A9;
+    height: 910px; 
+    text-align: center; 
+    padding-top: 10%;
+
+    }
+.main p{
+    text-align: center;
+}
