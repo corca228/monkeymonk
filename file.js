@@ -1,6 +1,10 @@
+
 let text=document.querySelector('.printed')
 let lang=document.querySelectorAll('.lang')
 let main=document.querySelector('.main')
+text='hello'
+let i=0
+let number=text[i]
 function trackKeyboardActivity() {
     // Add event listener for keydown event
     document.addEventListener('keydown', function(event) {
@@ -12,6 +16,13 @@ function trackKeyboardActivity() {
       // Send an event to analytics service or perform any tracking action
       console.log('Key pressed: ' + keyPressed);
       console.log('Key code: ' + keyCode);
+      if (number==keyPressed){
+        i=i+1
+        number=text[i]
+      }else{
+        keyPressed.style.color="red"
+        console.log('ERROR!'+number)
+      }
       // Here you can replace console.log with your analytics tracking code
     });
   }
