@@ -1,12 +1,10 @@
-
-
-.top{
-    background-color: #3500D3	;
+.top {
+    background-color: #3500D3;
     height: 170px;
     width: 100%;
-    }
+}
 
-.bar{
+.bar {
     font-family: Inter;
     font-size: 48px;
     font-weight: 900;
@@ -15,19 +13,19 @@
     vertical-align: bottom;
     font-family: comic sans ms;
     -webkit-text-stroke: 1px #F5F5F5;
-    }
+}
 
-.example{
+.example {
     color: red;
     height: 300px;
     width: 900px;
     margin: 0;
     padding-top: 70px;
     position: absolute;
-    }
-    
-.name{  
-    font-size: 62px; 
+}
+
+.name {
+    font-size: 62px;
     margin: 0;
     padding-top: 10px;
     padding-left: 5px;
@@ -35,16 +33,16 @@
     -webkit-text-stroke: 1.5px #F5F5F5;
 }
 
-.taimer{
+.taimer {
     text-align: right;
-    }
+}
 
-.body{
+.body {
     margin: 0;
     padding: 0;
-    }
+}
 
-.lang{
+.lang {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,19 +51,21 @@
     top: 0%;
     height: 170px;
     width: 100%;
-    }
-.main{
-    background-color: #323232;
-    height: 910px; 
-    text-align: center; 
-    padding-top: 10%;
+}
 
-    }
-.main p{
+.main {
+    background-color: #323232;
+    height: 910px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.main p {
     text-align: center;
     padding: 0;
 }
-.printed{
+
+.printed {
     background-color: #323232;
     height: 300px;
     width: 900px;
