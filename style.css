@@ -40,6 +40,7 @@
 .body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .lang {
@@ -55,14 +56,14 @@
 
 .main {
     background-color: #323232;
-    height: 910px;
+    height: 100%;
     text-align: center;
     padding-top: 10%;
 }
 
 .main p {
     text-align: center;
-    padding: 0;
+    padding-top: 70px;
 }
 
 .printed {
@@ -70,4 +71,15 @@
     height: 300px;
     width: 900px;
     position: relative;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 250px;
+}
+
+p#eng {
+    color: black
+}
+
+p#rus {
+    color: black
 }
