@@ -13,14 +13,57 @@ let split_text_eng2 = text_eng2.split("")
 let split_text_eng3 = text_eng3.split("")
     // example.textContent = text1
 
-let text = document.querySelector('.printed')
-let lang = document.querySelectorAll('.lang')
+let heading = document.querySelector('.printed')
+let lang = document.querySelector('.bar')
+let eng = document.getElementById('eng')
+let rus = document.getElementById('rus')
 let main = document.querySelector('.main')
 let example = document.querySelector('.example')
 
+let screen_text = []
+
+function getRandomInt() {
+    return Math.floor(Math.random());
+}
+const russian_text = ['split_text1', 'split_text2', 'split_text3']
+const english_text = ['split_text_eng1', 'split_text_eng2', 'split_text_eng3']
+const rondom = getRandomInt(3)
+const result = russian_text[rondom]
+const result_eng = english_text[rondom]
+console.log(result)
+
+
+for (let index = 0; index < split_text1.length; index++) {
+    const element = `<span>${split_text1[index]}</span>`
+    screen_text.push(element)
+}
+
+
 let i = 0
+let language = 'russ'
 let number = split_text1[i]
-    // let number_eng = text_eng[i]
+lang.addEventListener('click', function() {
+    if (language == 'russ') {
+        language = 'eng'
+        eng.style.color = 'red'
+        rus.style.color = 'black'
+        number = result_eng
+        console.log(number)
+    } else {
+        language = 'russ'
+        rus.style.color = 'red'
+        eng.style.color = 'black'
+        number = result
+        console.log(number)
+    }
+})
+
+
+heading.innerHTML = screen_text.join('')
+heading.style.color = 'gray'
+
+let children = heading.children // получение массива символов, обернутых в span
+children[0].classList.add('current')
 
 function trackKeyboardActivity() {
     document.addEventListener('keydown', function(event) {
@@ -32,18 +75,17 @@ function trackKeyboardActivity() {
         console.log('Key pressed: ' + keyPressed);
         console.log('Key code: ' + keyCode);
         if (number == keyPressed) {
+            children[i].style.color = 'white'
             i = i + 1
             number = split_text1[i]
+            children[i - 1].classList.remove('current') // удаление каретки для предыдущего символа
+            children[i].classList.add('current')
         } else {
-
-            // keyPressed.style.color = "red"
+            children[i].style.color = 'red'
             console.log('ERROR!' + number)
         }
-        // Here you can replace console.log with your analytics tracking code
     });
 }
 
-// lang.addEventListener('click', function() {
 
-// })
 trackKeyboardActivity('.printed');
