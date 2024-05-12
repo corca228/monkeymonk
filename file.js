@@ -60,7 +60,8 @@ lang.addEventListener('click', function() {
           screen_text.push(element)}
         heading.innerHTML = screen_text.join('')
         heading.style.color = 'gray'
-        number=result_eng[i]
+        i=0
+        
     } else {
         language = 'russ'
         rus.style.color = 'red'
@@ -70,7 +71,8 @@ lang.addEventListener('click', function() {
           const element = `<span>${result[index]}</span>`
           screen_text.push(element)}
         heading.innerHTML = screen_text.join('')
-        heading.style.color = 'gray'
+        heading.style.color = 'gray'        
+        i=0
         number=result[i]
     }
 })
