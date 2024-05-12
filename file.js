@@ -94,7 +94,7 @@ function trackKeyboardActivity() {
         if (number == keyPressed) {
             children[i].style.color = 'white'
             i = i + 1
-            if (number==result_eng[i]){
+            if (language=='eng'){
               number=result_eng[i]
             }else{
               number=result[i]}
